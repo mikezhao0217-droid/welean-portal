@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "brand": "WeLean Technology",
+    "home": "首页",
+    "mail": "邮件服务",
+    "zpl": "ZPL打印工具",
+    "creform": "Creform 设计",
+    "encyclopedia": "精益百科"
+  },
+  "hero": {
+    "vision": "致力于提供永久免费的精益企业各类实用工具",
+    "description": "本服务器由 WeLean Technology 运营，用于合法的个人及商业服务。"
+  },
+  "services": {
+    "title": "我们的服务",
+    "mail": {
+      "name": "邮件服务",
+      "description": "专业的企业邮件解决方案"
+    },
+    "zpl": {
+      "name": "ZPL打印工具",
+      "description": "标签打印工具与模板"
+    },
+    "creform": {
+      "name": "Creform 设计",
+      "description": "即将推出"
+    },
+    "encyclopedia": {
+      "name": "精益百科",
+      "description": "即将推出"
+    }
+  },
+  "admin": {
+    "title": "负责人信息",
+    "admin": "管理员",
+    "email": "联系邮箱",
+    "server": "邮件服务器",
+    "ip": "IP地址"
+  },
+  "serverConfig": {
+    "title": "服务器配置",
+    "description": "服务器已按照行业最佳实践配置，包括但不限于：",
+    "ptr": "PTR记录",
+    "spf": "SPF记录",
+    "dkim": "DKIM签名",
+    "dmarc": "DMARC策略",
+    "note": "已按照行业最佳实践配置（PTR、SPF、DKIM、DMARC等）"
+  },
+  "footer": {
+    "copyright": "© 2026 WeLean Technology. All Rights Reserved."
+  },
+  "languageSwitcher": {
+    "en": "English",
+    "zh": "中文"
+  }
+}

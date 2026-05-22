@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "brand": "WeLean Technology",
+    "home": "Home",
+    "mail": "Mail Service",
+    "zpl": "ZPL Printer",
+    "creform": "Creform Design",
+    "encyclopedia": "Lean Encyclopedia"
+  },
+  "hero": {
+    "vision": "Dedicated to providing permanently free practical tools for lean enterprises",
+    "description": "This server is operated by WeLean Technology for legitimate personal and commercial services."
+  },
+  "services": {
+    "title": "Our Services",
+    "mail": {
+      "name": "Mail Service",
+      "description": "Professional enterprise email solutions"
+    },
+    "zpl": {
+      "name": "ZPL Printer",
+      "description": "Label printing tools and templates"
+    },
+    "creform": {
+      "name": "Creform Design",
+      "description": "Coming Soon"
+    },
+    "encyclopedia": {
+      "name": "Lean Encyclopedia",
+      "description": "Coming Soon"
+    }
+  },
+  "admin": {
+    "title": "Administrator Information",
+    "admin": "Administrator",
+    "email": "Contact Email",
+    "server": "Mail Server",
+    "ip": "IP Address"
+  },
+  "serverConfig": {
+    "title": "Server Configuration",
+    "description": "The server is configured with industry best practices, including but not limited to:",
+    "ptr": "PTR Record",
+    "spf": "SPF Record",
+    "dkim": "DKIM Signature",
+    "dmarc": "DMARC Policy",
+    "note": "Configured with industry best practices (PTR, SPF, DKIM, DMARC, etc.)"
+  },
+  "footer": {
+    "copyright": "© 2026 WeLean Technology. All Rights Reserved."
+  },
+  "languageSwitcher": {
+    "en": "English",
+    "zh": "中文"
+  }
+}
