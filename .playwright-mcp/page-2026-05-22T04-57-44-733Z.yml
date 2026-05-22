@@ -1,0 +1,7 @@
+- status [ref=e1]:
+  - generic [ref=e2]:
+    - img [ref=e4]
+    - generic [ref=e6]:
+      - text: Static route
+      - button "Hide static indicator" [ref=e7] [cursor=pointer]:
+        - img [ref=e8]

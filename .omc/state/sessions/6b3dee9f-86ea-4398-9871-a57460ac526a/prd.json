@@ -1,0 +1,174 @@
+{
+  "project": "WeLean Portal - i18n Implementation",
+  "version": "1.0.0",
+  "lastUpdated": "2026-05-22T12:48:00Z",
+  "stories": [
+    {
+      "id": "US-001",
+      "title": "Install and configure next-intl",
+      "priority": 1,
+      "status": "completed",
+      "passes": true,
+      "description": "Install next-intl package and configure it for Next.js App Router with English (en) as default and Chinese (zh) as second language",
+      "acceptanceCriteria": [
+        "package.json shows next-intl is installed with latest version",
+        "i18n.ts configuration file exists in project root with proper locale settings",
+        "Default locale is set to 'en'",
+        "Supported locales array includes both 'en' and 'zh'",
+        "Locale type is properly exported for use throughout the app"
+      ]
+    },
+    {
+      "id": "US-002",
+      "title": "Create translation JSON files",
+      "priority": 2,
+      "status": "completed",
+      "passes": true,
+      "description": "Create messages/en.json and messages/zh.json with all user-visible text extracted and translated",
+      "acceptanceCriteria": [
+        "messages/en.json exists with all English translations",
+        "messages/zh.json exists with all Chinese translations",
+        "Both files contain identical key structures for all UI text",
+        "Vision text is included: 'Dedicated to providing permanently free practical tools for lean enterprises' (EN) and '致力于提供永久免费的精益企业各类实用工具' (ZH)",
+        "Main description is included for both languages",
+        "All service names are translated (Mail Service/邮件服务, ZPL Printer/ZPL打印工具, Creform Design/Creform 设计, Lean Encyclopedia/精益百科)",
+        "Admin info section labels are translated",
+        "Footer copyright text is translated"
+      ]
+    },
+    {
+      "id": "US-003",
+      "title": "Set up Next.js middleware for locale routing",
+      "priority": 3,
+      "status": "completed",
+      "passes": true,
+      "description": "Create middleware.ts that handles locale detection and routing, redirecting root / to /en",
+      "acceptanceCriteria": [
+        "middleware.ts file exists in project root",
+        "Middleware implements localeMatcher: 'bestsuit' for automatic locale detection",
+        "Root path / redirects to /en for default locale",
+        "Middleware only processes locale paths and ignores API routes, static files, and Next.js internals",
+        "Locale is extracted from URL pathname and stored in cookie"
+      ]
+    },
+    {
+      "id": "US-004",
+      "title": "Restructure app directory for i18n routing",
+      "priority": 4,
+      "status": "completed",
+      "passes": true,
+      "description": "Move existing page and layout files into app/[locale]/ directory structure for next-intl",
+      "acceptanceCriteria": [
+        "app/[locale]/layout.tsx exists with proper NextIntlClientProvider setup",
+        "app/[locale]/page.tsx exists with the main page content",
+        "Root layout.tsx is updated to pass params to locale layout",
+        "All existing functionality (dark theme, responsive design, gradients) is preserved",
+        "HTML lang attribute is dynamically set based on locale",
+        "File structure matches next-intl App Router requirements"
+      ]
+    },
+    {
+      "id": "US-005",
+      "title": "Implement language switcher component",
+      "priority": 5,
+      "status": "completed",
+      "passes": true,
+      "description": "Create a language switcher dropdown/toggle in the navigation bar that allows users to switch between English and Chinese",
+      "acceptanceCriteria": [
+        "Language switcher component exists in the navigation bar",
+        "Switcher displays current language (EN/中文)",
+        "Clicking the switcher shows a dropdown with both language options",
+        "Selecting a language navigates to the corresponding locale path (/en or /zh)",
+        "Switcher maintains position and styling in responsive design",
+        "Current locale is highlighted in the dropdown",
+        "Switcher uses Link component for client-side navigation"
+      ]
+    },
+    {
+      "id": "US-006",
+      "title": "Replace hardcoded text with useTranslations hooks",
+      "priority": 6,
+      "status": "completed",
+      "passes": true,
+      "description": "Replace all hardcoded Chinese and English text in the page component with useTranslations hooks from next-intl",
+      "acceptanceCriteria": [
+        "All hardcoded strings in page.tsx are replaced with useTranslations() calls",
+        "Navigation tab labels use translations",
+        "Vision section uses translations and is styled with larger font",
+        "Main description uses translations",
+        "Service cards use translated names and descriptions",
+        "Admin info section labels use translations",
+        "Server configuration section uses translations",
+        "Footer text uses translations",
+        "No hardcoded user-visible text remains in the component"
+      ]
+    },
+    {
+      "id": "US-007",
+      "title": "Update services section with new links and content",
+      "priority": 7,
+      "status": "completed",
+      "passes": true,
+      "description": "Update the services section to match the new requirements: Mail Service (https://mail.welean.top), ZPL Printer (https://zplprinter.welean.top), Creform Design (placeholder), Lean Encyclopedia (placeholder)",
+      "acceptanceCriteria": [
+        "Service 1: Mail Service / 邮件服务 links to https://mail.welean.top",
+        "Service 2: ZPL Printer / ZPL打印工具 links to https://zplprinter.welean.top",
+        "Service 3: Creform Design / Creform 设计 shows 'Coming Soon' status with placeholder link (#)",
+        "Service 4: Lean Encyclopedia / 精益百科 shows 'Coming Soon' status with placeholder link (#)",
+        "Active services open in new tab (target='_blank')",
+        "Coming soon services are visually distinct (disabled state or different styling)",
+        "Service icons and descriptions are appropriate for each service"
+      ]
+    },
+    {
+      "id": "US-008",
+      "title": "Update admin info section with new details",
+      "priority": 8,
+      "status": "completed",
+      "passes": true,
+      "description": "Update the admin info section with the new admin details and server configuration note",
+      "acceptanceCriteria": [
+        "Admin name shows 'Kasda Polam'",
+        "Contact email shows 'kasdafolam985@gmail.com' as clickable mailto link",
+        "Mail server shows 'mail.welean.top'",
+        "IP address shows '104.129.11.119' in monospace font",
+        "Server config note includes 'Configured with industry best practices (PTR, SPF, DKIM, DMARC, etc.)'",
+        "All labels and values are properly translated"
+      ]
+    },
+    {
+      "id": "US-009",
+      "title": "Verify build and functionality",
+      "priority": 9,
+      "status": "completed",
+      "passes": true,
+      "description": "Run production build and verify all i18n functionality works correctly with no errors",
+      "acceptanceCriteria": [
+        "npm run build completes successfully with no errors",
+        "npm run build shows optimized bundle sizes",
+        "Visiting / redirects to /en",
+        "Visiting /en shows English content",
+        "Visiting /zh shows Chinese content",
+        "Language switcher correctly switches between locales",
+        "All external links (mail, ZPL printer) work correctly",
+        "Responsive design works on mobile and desktop",
+        "Dark theme and gradients are preserved",
+        "No console errors or warnings"
+      ]
+    },
+    {
+      "id": "US-010",
+      "title": "Create git commit",
+      "priority": 10,
+      "status": "completed",
+      "passes": true,
+      "description": "Commit all i18n implementation changes to git with the specified commit message",
+      "acceptanceCriteria": [
+        "All i18n-related files are staged (middleware.ts, i18n.ts, messages/, app/[locale]/, package.json, package-lock.json)",
+        "Commit message matches exactly: 'feat: add i18n support with next-intl, optimize content and services'",
+        "Commit follows conventional commit format",
+        "Git status shows clean working directory after commit (excluding .omc state files)"
+      ]
+    }
+  ]
+}

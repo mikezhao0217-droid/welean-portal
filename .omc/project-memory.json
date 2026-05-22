@@ -31,9 +31,105 @@
   "directoryMap": {},
   "hotPaths": [
     {
+      "path": "src/app/[locale]/page.tsx",
+      "accessCount": 37,
+      "lastAccessed": 1779427333532,
+      "type": "file"
+    },
+    {
+      "path": "src/app/layout.tsx",
+      "accessCount": 12,
+      "lastAccessed": 1779426979357,
+      "type": "file"
+    },
+    {
       "path": "package.json",
-      "accessCount": 1,
-      "lastAccessed": 1779410366271,
+      "accessCount": 11,
+      "lastAccessed": 1779426975157,
+      "type": "file"
+    },
+    {
+      "path": "src/app/[locale]/layout.tsx",
+      "accessCount": 11,
+      "lastAccessed": 1779427337503,
+      "type": "file"
+    },
+    {
+      "path": "src/app/globals.css",
+      "accessCount": 10,
+      "lastAccessed": 1779425265549,
+      "type": "file"
+    },
+    {
+      "path": "middleware.ts",
+      "accessCount": 10,
+      "lastAccessed": 1779427367128,
+      "type": "file"
+    },
+    {
+      "path": "i18n.ts",
+      "accessCount": 9,
+      "lastAccessed": 1779427333478,
+      "type": "file"
+    },
+    {
+      "path": "src/app/page.tsx",
+      "accessCount": 9,
+      "lastAccessed": 1779427356558,
+      "type": "file"
+    },
+    {
+      "path": "postcss.config.mjs",
+      "accessCount": 8,
+      "lastAccessed": 1779415644107,
+      "type": "file"
+    },
+    {
+      "path": "next.config.ts",
+      "accessCount": 5,
+      "lastAccessed": 1779426975205,
+      "type": "file"
+    },
+    {
+      "path": "src/i18n/request.ts",
+      "accessCount": 4,
+      "lastAccessed": 1779426975259,
+      "type": "file"
+    },
+    {
+      "path": "messages/en.json",
+      "accessCount": 4,
+      "lastAccessed": 1779426975313,
+      "type": "file"
+    },
+    {
+      "path": "messages/zh.json",
+      "accessCount": 4,
+      "lastAccessed": 1779426975369,
+      "type": "file"
+    },
+    {
+      "path": "src",
+      "accessCount": 3,
+      "lastAccessed": 1779415545451,
+      "type": "directory"
+    },
+    {
+      "path": "src/app",
+      "accessCount": 3,
+      "lastAccessed": 1779425591233,
+      "type": "directory"
+    },
+    {
+      "path": "welean-homepage-test.png",
+      "accessCount": 3,
+      "lastAccessed": 1779425872882,
+      "type": "file"
+    },
+    {
+      "path": "tailwind.config.ts",
+      "accessCount": 2,
+      "lastAccessed": 1779415080484,
       "type": "file"
     },
     {
@@ -43,39 +139,45 @@
       "type": "file"
     },
     {
-      "path": "next.config.ts",
-      "accessCount": 1,
-      "lastAccessed": 1779410366696,
-      "type": "file"
-    },
-    {
-      "path": "tailwind.config.ts",
-      "accessCount": 1,
-      "lastAccessed": 1779410366910,
-      "type": "file"
-    },
-    {
       "path": "eslint.config.mjs",
       "accessCount": 1,
       "lastAccessed": 1779410367123,
       "type": "file"
     },
     {
-      "path": "src/app/globals.css",
+      "path": ".playwright-mcp/page-2026-05-22T02-01-30-540Z.yml",
       "accessCount": 1,
-      "lastAccessed": 1779410390597,
+      "lastAccessed": 1779415294686,
       "type": "file"
     },
     {
-      "path": "src/app/layout.tsx",
+      "path": "",
       "accessCount": 1,
-      "lastAccessed": 1779410390809,
+      "lastAccessed": 1779425323356,
+      "type": "directory"
+    },
+    {
+      "path": "language-switcher-verification.png",
+      "accessCount": 1,
+      "lastAccessed": 1779425950201,
       "type": "file"
     },
     {
-      "path": "src/app/page.tsx",
+      "path": "language-switcher-final-test.png",
       "accessCount": 1,
-      "lastAccessed": 1779410391021,
+      "lastAccessed": 1779426036249,
+      "type": "file"
+    },
+    {
+      "path": "language-switcher-dropdown-open.png",
+      "accessCount": 1,
+      "lastAccessed": 1779426054029,
+      "type": "file"
+    },
+    {
+      "path": "language-switcher-chinese-page.png",
+      "accessCount": 1,
+      "lastAccessed": 1779426072407,
       "type": "file"
     }
   ],

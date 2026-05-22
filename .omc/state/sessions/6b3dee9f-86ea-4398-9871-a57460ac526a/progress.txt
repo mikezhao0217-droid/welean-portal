@@ -1,0 +1,66 @@
+# Ralph Progress - WeLean Portal i18n Implementation
+
+## Session Information
+- Session ID: 6b3dee9f-86ea-4398-9871-a57460ac526a
+- Start Time: 2026-05-22 12:48:00 UTC
+- Project: WeLean Portal - i18n Implementation
+- Task: Add full i18n support with next-intl, optimize content and services
+
+## Story Progress
+
+### US-001: Install and configure next-intl ✅ COMPLETED
+**Status**: PASSED
+**Findings**:
+- ✅ next-intl@^4.12.0 successfully installed via npm
+- ✅ i18n.ts configuration file created in project root
+- ✅ Default locale set to 'en'
+- ✅ Supported locales array: ['en', 'zh']
+- ✅ Locale type properly exported as `export type Locale = (typeof locales)[number]`
+- ✅ Navigation helpers exported: Link, redirect, usePathname, useRouter
+- ✅ Build completes successfully after installation
+
+**Files Modified**:
+- package.json - Added next-intl@^4.12.0 dependency
+- i18n.ts - Created with locale configuration and navigation helpers
+
+**Evidence**:
+- Build output: "✓ Compiled successfully", "✓ Generating static pages (4/4)"
+- TypeScript compilation successful with proper types
+
+### CURRENT STORY: US-002 - Create translation JSON files
+**Status**: IN PROGRESS
+**Priority**: 2
+**Description**: Create messages/en.json and messages/zh.json with all user-visible text extracted and translated
+
+**Acceptance Criteria**:
+- [ ] messages/en.json exists with all English translations
+- [ ] messages/zh.json exists with all Chinese translations
+- [ ] Both files contain identical key structures for all UI text
+- [ ] Vision text is included: 'Dedicated to providing permanently free practical tools for lean enterprises' (EN) and '致力于提供永久免费的精益企业各类实用工具' (ZH)
+- [ ] Main description is included for both languages
+- [ ] All service names are translated (Mail Service/邮件服务, ZPL Printer/ZPL打印工具, Creform Design/Creform 设计, Lean Encyclopedia/精益百科)
+- [ ] Admin info section labels are translated
+- [ ] Footer copyright text is translated
+
+## Implementation Notes
+
+### Technical Approach
+- Using next-intl (most popular Next.js i18n library for App Router)
+- Default locale: English (en)
+- Second locale: Chinese (zh)
+- URL structure: /en, /zh with root / redirecting to /en
+- Middleware for automatic locale detection
+- Translation files: messages/en.json, messages/zh.json
+
+### Content Changes Required
+1. Add Vision section with larger font
+2. Update main description text
+3. Update services section (4 tabs with new links)
+4. Update admin info section
+5. Add language switcher to navigation
+
+## Next Steps
+1. Create messages/ directory
+2. Create messages/en.json with all English translations
+3. Create messages/zh.json with all Chinese translations
+4. Proceed to US-003: Set up Next.js middleware

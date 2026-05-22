@@ -1,0 +1,80 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - generic [ref=e8]: W
+          - generic [ref=e9]: WeLean Technology
+        - generic [ref=e10]:
+          - button "首页" [ref=e11]
+          - link "邮件服务" [ref=e12] [cursor=pointer]:
+            - /url: https://zplprinter.welean.top
+          - link "ZPL打印工具" [ref=e13] [cursor=pointer]:
+            - /url: https://zplprinter.welean.top
+          - button "云服务" [disabled] [ref=e14]
+          - button "API服务" [disabled] [ref=e15]
+    - main [ref=e16]:
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - generic [ref=e21]: W
+          - heading "WeLean Technology" [level=1] [ref=e22]
+          - paragraph [ref=e23]: 本服务器由 WeLean Technology 运营，用于合法的个人及商业服务。
+        - generic [ref=e24]:
+          - generic [ref=e25]:
+            - heading "负责人信息" [level=2] [ref=e26]:
+              - img [ref=e27]
+              - text: 负责人信息
+            - generic [ref=e29]:
+              - generic [ref=e30]:
+                - generic [ref=e31]: "管理员:"
+                - generic [ref=e32]: Kasda Polam
+              - generic [ref=e33]:
+                - generic [ref=e34]: "联系邮箱:"
+                - link "kasdafolam985@gmail.com" [ref=e35] [cursor=pointer]:
+                  - /url: mailto:kasdafolam985@gmail.com
+              - generic [ref=e36]:
+                - generic [ref=e37]: "邮件服务器:"
+                - generic [ref=e38]: mail.welean.top
+              - generic [ref=e39]:
+                - generic [ref=e40]: "IP地址:"
+                - generic [ref=e41]: 104.129.11.119
+          - generic [ref=e42]:
+            - heading "服务器配置" [level=2] [ref=e43]:
+              - img [ref=e44]
+              - text: 服务器配置
+            - paragraph [ref=e46]: 服务器已按照行业最佳实践配置，包括但不限于：
+            - list [ref=e47]:
+              - listitem [ref=e48]:
+                - img [ref=e49]
+                - text: PTR记录
+              - listitem [ref=e51]:
+                - img [ref=e52]
+                - text: SPF记录
+              - listitem [ref=e54]:
+                - img [ref=e55]
+                - text: DKIM签名
+              - listitem [ref=e57]:
+                - img [ref=e58]
+                - text: DMARC策略
+        - generic [ref=e60]:
+          - heading "我们的服务" [level=2] [ref=e61]
+          - generic [ref=e62]:
+            - generic [ref=e63] [cursor=pointer]:
+              - generic [ref=e64]: 📧
+              - heading "邮件服务" [level=3] [ref=e65]
+              - paragraph [ref=e66]: 专业的企业邮件解决方案
+            - generic [ref=e67] [cursor=pointer]:
+              - generic [ref=e68]: 🏷️
+              - heading "ZPL打印" [level=3] [ref=e69]
+              - paragraph [ref=e70]: 标签打印工具与模板
+            - generic [ref=e71]:
+              - generic [ref=e72]: ☁️
+              - heading "云服务" [level=3] [ref=e73]
+              - paragraph [ref=e74]: 即将推出
+            - generic [ref=e75]:
+              - generic [ref=e76]: 🔌
+              - heading "API服务" [level=3] [ref=e77]
+              - paragraph [ref=e78]: 即将推出
+    - contentinfo [ref=e79]:
+      - paragraph [ref=e82]: © 2026 WeLean Technology. All Rights Reserved.
+  - alert [ref=e83]
