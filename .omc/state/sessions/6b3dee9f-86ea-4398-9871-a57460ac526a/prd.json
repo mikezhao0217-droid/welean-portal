@@ -131,7 +131,7 @@
         "Admin name shows 'Kasda Polam'",
         "Contact email shows 'kasdafolam985@gmail.com' as clickable mailto link",
         "Mail server shows 'mail.welean.top'",
-        "IP address shows '104.129.11.119' in monospace font",
+        "IP address shows '104.168.108.62' in monospace font",
         "Server config note includes 'Configured with industry best practices (PTR, SPF, DKIM, DMARC, etc.)'",
         "All labels and values are properly translated"
       ]
