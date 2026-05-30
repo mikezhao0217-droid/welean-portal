@@ -24,7 +24,12 @@ export default function Home() {
       external: true,
       url: "https://zplprinter.welean.top",
     },
-    { id: "creform", label: t("nav.creform"), external: false, disabled: true },
+    {
+      id: "creform",
+      label: t("nav.creform"),
+      external: true,
+      url: "https://creform.welean.top",
+    },
     {
       id: "encyclopedia",
       label: t("nav.encyclopedia"),
@@ -292,19 +297,21 @@ export default function Home() {
                   icon: "📧",
                   desc: t("services.mail.description"),
                   id: "mail",
+                  url: "https://mail.welean.top",
                 },
                 {
                   name: t("services.zpl.name"),
                   icon: "🏷️",
                   desc: t("services.zpl.description"),
                   id: "zpl",
+                  url: "https://zplprinter.welean.top",
                 },
                 {
                   name: t("services.creform.name"),
                   icon: "☁️",
                   desc: t("services.creform.description"),
-                  disabled: true,
                   id: "creform",
+                  url: "https://creform.welean.top",
                 },
                 {
                   name: t("services.encyclopedia.name"),
@@ -313,22 +320,34 @@ export default function Home() {
                   disabled: true,
                   id: "encyclopedia",
                 },
-              ].map((service) => (
-                <div
-                  key={service.id}
-                  className={`bg-gray-800/50 rounded-lg p-4 text-center ${
-                    service.disabled
-                      ? "opacity-50"
-                      : "hover:bg-gray-800/70 transition-colors cursor-pointer"
-                  }`}
-                >
-                  <div className="text-3xl mb-2">{service.icon}</div>
-                  <h3 className="text-white font-medium mb-1">
-                    {service.name}
-                  </h3>
-                  <p className="text-gray-400 text-sm">{service.desc}</p>
-                </div>
-              ))}
+              ].map((service) =>
+                service.disabled ? (
+                  <div
+                    key={service.id}
+                    className="bg-gray-800/50 rounded-lg p-4 text-center opacity-50"
+                  >
+                    <div className="text-3xl mb-2">{service.icon}</div>
+                    <h3 className="text-white font-medium mb-1">
+                      {service.name}
+                    </h3>
+                    <p className="text-gray-400 text-sm">{service.desc}</p>
+                  </div>
+                ) : (
+                  <a
+                    key={service.id}
+                    href={service.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-gray-800/50 rounded-lg p-4 text-center hover:bg-gray-800/70 transition-colors cursor-pointer block"
+                  >
+                    <div className="text-3xl mb-2">{service.icon}</div>
+                    <h3 className="text-white font-medium mb-1">
+                      {service.name}
+                    </h3>
+                    <p className="text-gray-400 text-sm">{service.desc}</p>
+                  </a>
+                ),
+              )}
             </div>
           </div>
         </div>
