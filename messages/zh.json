@@ -30,23 +30,8 @@
       "description": "即将推出"
     }
   },
-  "admin": {
-    "title": "负责人信息",
-    "admin": "管理员",
-    "email": "联系邮箱",
-    "server": "邮件服务器",
-    "ip": "IP地址"
-  },
-  "serverConfig": {
-    "title": "服务器配置",
-    "description": "服务器已按照行业最佳实践配置，包括但不限于：",
-    "ptr": "PTR记录",
-    "spf": "SPF记录",
-    "dkim": "DKIM签名",
-    "dmarc": "DMARC策略",
-    "note": "已按照行业最佳实践配置（PTR、SPF、DKIM、DMARC等）"
-  },
   "footer": {
+    "contact": "mike.zhao@welean.top",
     "copyright": "© 2026 WeLean Technology. All Rights Reserved."
   },
   "languageSwitcher": {

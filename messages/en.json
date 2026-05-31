@@ -30,23 +30,8 @@
       "description": "Coming Soon"
     }
   },
-  "admin": {
-    "title": "Administrator Information",
-    "admin": "Administrator",
-    "email": "Contact Email",
-    "server": "Mail Server",
-    "ip": "IP Address"
-  },
-  "serverConfig": {
-    "title": "Server Configuration",
-    "description": "The server is configured with industry best practices, including but not limited to:",
-    "ptr": "PTR Record",
-    "spf": "SPF Record",
-    "dkim": "DKIM Signature",
-    "dmarc": "DMARC Policy",
-    "note": "Configured with industry best practices (PTR, SPF, DKIM, DMARC, etc.)"
-  },
   "footer": {
+    "contact": "mike.zhao@welean.top",
     "copyright": "© 2026 WeLean Technology. All Rights Reserved."
   },
   "languageSwitcher": {
