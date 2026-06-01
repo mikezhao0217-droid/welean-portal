@@ -29,6 +29,7 @@ export default function Home() {
       label: t("nav.creform"),
       external: true,
       url: "https://creform.welean.top",
+      disabled: true,
     },
     {
       id: "encyclopedia",
@@ -210,6 +211,7 @@ export default function Home() {
                   desc: t("services.creform.description"),
                   id: "creform",
                   url: "https://creform.welean.top",
+                  disabled: true,
                 },
                 {
                   name: t("services.encyclopedia.name"),
