@@ -125,7 +125,15 @@ export default function Home() {
               {/* Navigation Tabs */}
               <div className="flex space-x-1">
                 {tabs.map((tab) =>
-                  tab.external ? (
+                  tab.disabled ? (
+                    <button
+                      key={tab.id}
+                      disabled
+                      className="px-4 py-2 rounded-md text-sm font-medium text-gray-600 cursor-not-allowed"
+                    >
+                      {tab.label}
+                    </button>
+                  ) : tab.external ? (
                     <a
                       key={tab.id}
                       href={tab.url}
@@ -135,14 +143,6 @@ export default function Home() {
                     >
                       {tab.label}
                     </a>
-                  ) : tab.disabled ? (
-                    <button
-                      key={tab.id}
-                      disabled
-                      className="px-4 py-2 rounded-md text-sm font-medium text-gray-600 cursor-not-allowed"
-                    >
-                      {tab.label}
-                    </button>
                   ) : (
                     <button
                       key={tab.id}
