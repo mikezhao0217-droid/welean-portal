@@ -2,7 +2,6 @@
   "nav": {
     "brand": "WeLean Technology",
     "home": "Home",
-    "mail": "Mail Service",
     "zpl": "ZPL Printer",
     "creform": "Creform Design",
     "encyclopedia": "Lean Encyclopedia"
@@ -13,10 +12,6 @@
   },
   "services": {
     "title": "Our Services",
-    "mail": {
-      "name": "Mail Service",
-      "description": "Professional enterprise email solutions"
-    },
     "zpl": {
       "name": "ZPL Printer",
       "description": "Label printing tools and templates"

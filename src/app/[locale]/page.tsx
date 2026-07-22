@@ -6,42 +6,12 @@ import { useTranslations, useLocale } from "next-intl";
 
 export default function Home() {
   const t = useTranslations();
-  const [activeTab, setActiveTab] = useState("home");
   const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
   const currentLocale = useLocale();
 
-  const tabs = [
-    { id: "home", label: t("nav.home"), external: false },
-    {
-      id: "mail",
-      label: t("nav.mail"),
-      external: true,
-      url: "https://mail.welean.top",
-    },
-    {
-      id: "zpl",
-      label: t("nav.zpl"),
-      external: true,
-      url: "https://zplprinter.welean.top",
-    },
-    {
-      id: "creform",
-      label: t("nav.creform"),
-      external: true,
-      url: "https://creform.welean.top",
-      disabled: true,
-    },
-    {
-      id: "encyclopedia",
-      label: t("nav.encyclopedia"),
-      external: false,
-      disabled: true,
-    },
-  ];
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-      {/* Fixed Navigation */}
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+      {/* Fixed Header - only logo + i18n switcher */}
       <nav className="fixed top-0 left-0 right-0 bg-gray-950/95 backdrop-blur-sm border-b border-gray-800 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
@@ -121,50 +91,13 @@ export default function Home() {
                   </div>
                 )}
               </div>
-
-              {/* Navigation Tabs */}
-              <div className="flex space-x-1">
-                {tabs.map((tab) =>
-                  tab.disabled ? (
-                    <button
-                      key={tab.id}
-                      disabled
-                      className="px-4 py-2 rounded-md text-sm font-medium text-gray-600 cursor-not-allowed"
-                    >
-                      {tab.label}
-                    </button>
-                  ) : tab.external ? (
-                    <a
-                      key={tab.id}
-                      href={tab.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-4 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-800 transition-colors"
-                    >
-                      {tab.label}
-                    </a>
-                  ) : (
-                    <button
-                      key={tab.id}
-                      onClick={() => setActiveTab(tab.id)}
-                      className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
-                        activeTab === tab.id
-                          ? "text-white bg-blue-600"
-                          : "text-gray-300 hover:text-white hover:bg-gray-800"
-                      }`}
-                    >
-                      {tab.label}
-                    </button>
-                  ),
-                )}
-              </div>
             </div>
           </div>
         </div>
       </nav>
 
       {/* Main Content */}
-      <main className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+      <main className="flex-1 pt-24 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           {/* Hero Section */}
           <div className="text-center mb-16">
@@ -184,20 +117,13 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Services Preview */}
+          {/* Services */}
           <div className="bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-800/30 rounded-2xl p-12 mb-12">
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-10 text-center">
               {t("services.title")}
             </h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                {
-                  name: t("services.mail.name"),
-                  icon: "📧",
-                  desc: t("services.mail.description"),
-                  id: "mail",
-                  url: "https://mail.welean.top",
-                },
                 {
                   name: t("services.zpl.name"),
                   icon: "🏷️",
@@ -211,7 +137,6 @@ export default function Home() {
                   desc: t("services.creform.description"),
                   id: "creform",
                   url: "https://creform.welean.top",
-                  disabled: true,
                 },
                 {
                   name: t("services.encyclopedia.name"),

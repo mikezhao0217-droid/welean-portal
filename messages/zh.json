@@ -2,7 +2,6 @@
   "nav": {
     "brand": "WeLean Technology",
     "home": "首页",
-    "mail": "邮件服务",
     "zpl": "ZPL打印工具",
     "creform": "Creform 设计",
     "encyclopedia": "精益百科"
@@ -13,10 +12,6 @@
   },
   "services": {
     "title": "我们的服务",
-    "mail": {
-      "name": "邮件服务",
-      "description": "专业的企业邮件解决方案"
-    },
     "zpl": {
       "name": "ZPL打印工具",
       "description": "标签打印工具与模板"
