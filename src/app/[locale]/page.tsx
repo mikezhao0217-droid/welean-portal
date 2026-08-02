@@ -100,26 +100,26 @@ export default function Home() {
       <main className="flex-1 min-h-0 pt-20 pb-4 px-4 sm:px-6 lg:px-8 flex flex-col justify-center">
         <div className="max-w-6xl w-full mx-auto">
           {/* Hero Section */}
-          <div className="text-center mb-6">
-            <div className="inline-block mb-3">
-              <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto shadow-2xl">
-                <span className="text-white font-bold text-2xl">W</span>
+          <div className="text-center mb-12">
+            <div className="inline-block mb-5">
+              <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto shadow-2xl">
+                <span className="text-white font-bold text-4xl">W</span>
               </div>
             </div>
-            <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2">
+            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4 tracking-tight">
               {t("nav.brand")}
             </h1>
-            <p className="text-base text-gray-300 max-w-2xl mx-auto leading-snug font-semibold">
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed font-semibold">
               {t("hero.vision")}
             </p>
           </div>
 
           {/* Services */}
-          <div className="bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-800/30 rounded-2xl p-5 sm:p-6">
-            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-5 text-center">
+          <div className="bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-800/30 rounded-2xl p-6 sm:p-8">
+            <h2 className="text-3xl font-bold text-white mb-6 text-center">
               {t("services.title")}
             </h2>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
               {[
                 {
                   name: t("services.zpl.name"),
