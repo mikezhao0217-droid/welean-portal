@@ -139,6 +139,13 @@ export default function Home() {
                   url: "https://creform.welean.top",
                 },
                 {
+                  name: t("services.flowforge.name"),
+                  icon: "🏭",
+                  desc: t("services.flowforge.description"),
+                  id: "flowforge",
+                  url: "https://flowforge.welean.top",
+                },
+                {
                   name: t("services.encyclopedia.name"),
                   icon: "🔌",
                   desc: t("services.encyclopedia.description"),

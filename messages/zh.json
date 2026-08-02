@@ -4,6 +4,7 @@
     "home": "首页",
     "zpl": "ZPL打印工具",
     "creform": "Creform 设计",
+    "flowforge": "FlowForge",
     "encyclopedia": "精益百科"
   },
   "hero": {
@@ -19,6 +20,10 @@
     "creform": {
       "name": "Creform 设计",
       "description": "3D Creform 结构设计工具"
+    },
+    "flowforge": {
+      "name": "FlowForge",
+      "description": "生产线建模、仿真与改善工作台"
     },
     "encyclopedia": {
       "name": "精益百科",

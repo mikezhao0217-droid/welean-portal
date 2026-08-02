@@ -4,6 +4,7 @@
     "home": "Home",
     "zpl": "ZPL Printer",
     "creform": "Creform Design",
+    "flowforge": "FlowForge",
     "encyclopedia": "Lean Encyclopedia"
   },
   "hero": {
@@ -19,6 +20,10 @@
     "creform": {
       "name": "Creform Design",
       "description": "3D Creform structure design tool"
+    },
+    "flowforge": {
+      "name": "FlowForge",
+      "description": "Production line modeling, simulation and improvement workbench"
     },
     "encyclopedia": {
       "name": "Lean Encyclopedia",
