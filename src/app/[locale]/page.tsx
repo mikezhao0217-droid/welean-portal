@@ -10,7 +10,7 @@ export default function Home() {
   const currentLocale = useLocale();
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+    <div className="h-screen flex flex-col bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden">
       {/* Fixed Header - only logo + i18n switcher */}
       <nav className="fixed top-0 left-0 right-0 bg-gray-950/95 backdrop-blur-sm border-b border-gray-800 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -97,32 +97,29 @@ export default function Home() {
       </nav>
 
       {/* Main Content */}
-      <main className="flex-1 pt-24 pb-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto">
+      <main className="flex-1 min-h-0 pt-20 pb-4 px-4 sm:px-6 lg:px-8 flex flex-col justify-center">
+        <div className="max-w-6xl w-full mx-auto">
           {/* Hero Section */}
-          <div className="text-center mb-16">
-            <div className="inline-block mb-6">
-              <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto shadow-2xl">
-                <span className="text-white font-bold text-4xl">W</span>
+          <div className="text-center mb-6">
+            <div className="inline-block mb-3">
+              <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto shadow-2xl">
+                <span className="text-white font-bold text-2xl">W</span>
               </div>
             </div>
-            <h1 className="text-5xl sm:text-6xl font-bold text-white mb-6">
+            <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2">
               {t("nav.brand")}
             </h1>
-            <p className="text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed font-semibold">
+            <p className="text-base text-gray-300 max-w-2xl mx-auto leading-snug font-semibold">
               {t("hero.vision")}
-            </p>
-            <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed mt-4">
-              {t("hero.description")}
             </p>
           </div>
 
           {/* Services */}
-          <div className="bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-800/30 rounded-2xl p-12 mb-12">
-            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-10 text-center">
+          <div className="bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-800/30 rounded-2xl p-5 sm:p-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-5 text-center">
               {t("services.title")}
             </h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
               {[
                 {
                   name: t("services.zpl.name"),
@@ -156,13 +153,13 @@ export default function Home() {
                 service.disabled ? (
                   <div
                     key={service.id}
-                    className="bg-gray-800/50 rounded-xl p-8 text-center opacity-50"
+                    className="bg-gray-800/50 rounded-xl p-5 text-center opacity-50"
                   >
-                    <div className="text-5xl mb-4">{service.icon}</div>
-                    <h3 className="text-white font-semibold text-lg mb-2">
+                    <div className="text-3xl mb-2">{service.icon}</div>
+                    <h3 className="text-white font-semibold text-base mb-1">
                       {service.name}
                     </h3>
-                    <p className="text-gray-400 text-base">{service.desc}</p>
+                    <p className="text-gray-400 text-sm">{service.desc}</p>
                   </div>
                 ) : (
                   <a
@@ -170,13 +167,13 @@ export default function Home() {
                     href={service.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-gray-800/50 rounded-xl p-8 text-center hover:bg-gray-800/70 transition-colors cursor-pointer block"
+                    className="bg-gray-800/50 rounded-xl p-5 text-center hover:bg-gray-800/70 transition-colors cursor-pointer block"
                   >
-                    <div className="text-5xl mb-4">{service.icon}</div>
-                    <h3 className="text-white font-semibold text-lg mb-2">
+                    <div className="text-3xl mb-2">{service.icon}</div>
+                    <h3 className="text-white font-semibold text-base mb-1">
                       {service.name}
                     </h3>
-                    <p className="text-gray-400 text-base">{service.desc}</p>
+                    <p className="text-gray-400 text-sm">{service.desc}</p>
                   </a>
                 ),
               )}
@@ -186,9 +183,9 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-950 border-t border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="text-center text-gray-400 space-y-3">
+      <footer className="bg-gray-950 border-t border-gray-800 shrink-0">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+          <div className="text-center text-gray-400 space-y-1">
             <div className="flex items-center justify-center space-x-2">
               <svg
                 className="w-5 h-5 text-gray-400"
