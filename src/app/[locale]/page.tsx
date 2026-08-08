@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Link } from "../../../i18n";
+import NextLink from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 
 export default function Home() {
@@ -208,6 +209,12 @@ export default function Home() {
               </a>
             </div>
             <p>{t("footer.copyright")}</p>
+            <NextLink
+              href="/privacy"
+              className="text-sm text-blue-400 transition-colors hover:text-blue-300"
+            >
+              Privacy Policy / 隐私政策
+            </NextLink>
           </div>
         </div>
       </footer>

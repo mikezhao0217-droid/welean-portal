@@ -29,6 +29,11 @@ export default function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL(`/${locale}`, request.url));
   }
 
+  // The privacy policy is intentionally available at a stable, locale-neutral URL.
+  if (pathname === '/privacy' || pathname.startsWith('/privacy/')) {
+    return NextResponse.next();
+  }
+
   return intlMiddleware(request);
 }
 
