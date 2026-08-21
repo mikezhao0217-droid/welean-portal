@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 
 export const privacyApps = [
   { slug: "wprint", name: "WPrint" },
-  { slug: "guessme", name: "GuessMe" },
+  { slug: "guesswho", name: "GuessWho" },
 ];
 
 export type PolicySection = {
